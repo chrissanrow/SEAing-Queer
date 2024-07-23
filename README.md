@@ -1,13 +1,8 @@
 # 191A_LGBTQintl
-(tentative)
-What social problem is being addressed?
+Tech Stack:
+HTML, CSS, JS
+MapLibreGL, GeoJSON
 
-We are looking to address the issue of limited social protections of queer populations internationally. We are specifically looking to highlight various legal protections afforded to LGBTQ+ communities and how these communities are affected by and respond to their circumstances.
+We hope that our project will be used by UCLA organizations that specialize in working with the LGBTQ+ community, such as the Asian Pacific Coalition, Kabalikat Kore, and the UCLA Queer Alliance, in order to create more opportunities that cater towards Southeast Asian American students that can provide for their voices to be heard and recognized. The data collected by the survey will be utilized for the visualizations of the project and upkeep of the website will be coordinated with these organizations.
 
-Who is being empowered by your mapplication?
-
-We are hoping to empower and provide awareness to international LGBTQ+ communities who are not afforded legal protections.
-
-What technical and ethical problems could there be in developing this tool?
-
-In developing this tool, we must be careful not to depict communities as incapable of uplifting themselves, but rather highlight their uniqueness and their perserverence in their particular situations. We must also be sure not to lead with a "savior" mindset. Technical/practical problems could arise in getting contact with such communities.
+Learning about the experiences of LGBTQ+ Southeast Asian students can inform the creation, continuation, and implementation of support structures under the LGBTQ Campus Resource Center. Additionally, more identity/culture focused groups can improve their inclusivity by adapting their resources, events, and spaces accordingly. This research project will ideally provide meaningful insight into the experiences of members of an underrepresented group of people, both in culture and sexual/gender identity, which will challenge institutional and club-based structures to better serve their needs.
