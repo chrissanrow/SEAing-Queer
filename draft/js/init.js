@@ -3,10 +3,12 @@ let mapOptions = {'centerLngLat': [-98.48424650,39.01190200],'startingZoomLevel'
 
 const map = new maplibregl.Map({
     container: 'map', // container ID
-    style: 'https://api.maptiler.com/maps/streets-v2-light/style.json?key=wsyYBQjqRwKnNsZrtci1', // Your style URL
+    style: 'https://api.maptiler.com/maps/dataviz/style.json?key=mP6OIUL7UJ4gpvVbg300', // Your style URL
     center: mapOptions.centerLngLat, // Starting position [lng, lat]
     zoom: mapOptions.startingZoomLevel // Starting zoom level
 });
+
+map.addControl(new maplibregl.NavigationControl());
 
 function addMarker(feature){
     let longitude = feature.lng;
@@ -38,6 +40,12 @@ function createButtons(lat,lng,title){
     document.getElementById("contents").appendChild(newButton);
 }
 
+function processData(results){
+    results.forEach(feature => {
+        addMarker(feature);
+    });
+};
+
 const dataUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSlPULuULAEXwfQ3IHZWjUk5_3sU3GTGkb94julK7VYDk52KtlR74YcQjtYeNVw2MRickuClVNHfabv/pub?output=csv";
 
 map.on('load', function() {
@@ -50,8 +58,8 @@ map.on('load', function() {
     });
 });
 
-function processData(results){
-    results.forEach(feature => {
-        addMarker(feature);
-    });
-};
+document.getElementById("zoom-button").addEventListener('click', function(){
+    map.flyTo({
+        center: [lng,lat],
+    })
+})

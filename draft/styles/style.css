@@ -104,8 +104,11 @@ ul, ol{
 }
 
 button{
+    font-weight: bold;
+    color: white;
     border-width: 0;
     padding: 10px;
-    box-shadow: 4px 4px rgb(128, 128, 128, 0.2);
+    box-shadow: 4px 4px rgb(236, 41, 57, 0.2);
+    background-color: #ec2939;
     border-radius: 2px;
 }
