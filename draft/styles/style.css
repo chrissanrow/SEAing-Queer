@@ -1,0 +1,111 @@
+/* The * selects everything and acts as a global reset to ensure consistency across browsers */
+* {
+    font-family: Roboto, sans-serif; /* Sets a default font for the whole page */
+    margin: 0; /* Removes default margins */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Makes sure borders and paddings are included in the element's total width and height */
+}
+
+/* Sets the background color of the whole page and ensures content fits the screen height */
+html {
+    background-color: white; /* Sets a light blue background color */
+}
+
+/* Applies to both <html> and <body> */
+html, body {
+    height: 80vh; /* Sets the height to 80% of the viewport height, making sure the content fits on the screen */
+    padding: 1rem; /* Adds a bit of space around the content for better readability */
+    box-sizing: border-box; /* Ensures padding does not add to the set height */
+}
+
+/* Defines the main layout of the page using CSS Grid */
+body {
+    display: grid; /* Enables CSS Grid layout */
+    grid-template-areas: 
+        "header" /* Top area for the header */
+        "main"   /* Middle area for the main content */
+        "footer"; /* Bottom area for the footer */
+    grid-template-rows: auto 1fr auto; /* Sizes: auto for header and footer to fit content, 1fr for main to fill remaining space */
+}
+
+/* Sets up the layout for the main content area, dividing it into two columns */
+main {
+    display: grid; /* Enables CSS Grid within the main element */
+    grid-template-areas:
+        "form map"; /* Divides the main area into portfolio and map sections side by side */
+    grid-template-columns: 1fr 1fr; /* Allocates equal width to both sections */
+}
+
+/* Grid area assignments for each major section, linking them to their respective areas in the grid */
+header { 
+    grid-area: header; /* Assigns the header to its grid area */
+}
+
+main { 
+    grid-area: main; /* Assigns the main content to its grid area */
+}
+
+p{
+    color: rgb(33, 53, 53);
+    font-weight: bold;
+    text-align: justify;
+}
+
+a{
+    color:rgb(61, 58, 75);
+    font-weight: bold;
+}
+
+.photo{
+    max-width: 60%;
+}
+
+.description{
+    max-width: 60%;
+    padding: 1rem;
+}
+
+#form {
+    grid-area: form;
+    flex: 1;
+}
+
+ul, ol{
+    padding-left: 20px;
+}
+
+.lists{
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.message{
+    font-weight: normal;
+}
+
+#map { 
+    grid-area: map; /* Assigns the map section to its grid area */
+    height: 80vh; /* Sets the map's height to 80% of the viewport height */
+}
+
+#footer {
+    grid-area: footer;
+    padding: 1rem;
+    color: rgb(58, 58, 58); /* Ensures text is readable against the dark background */
+    text-align: center; /* Centers the footer content */
+}
+
+#contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button{
+    border-width: 0;
+    padding: 10px;
+    box-shadow: 4px 4px rgb(128, 128, 128, 0.2);
+    border-radius: 2px;
+}
