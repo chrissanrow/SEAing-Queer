@@ -59,7 +59,5 @@ map.on('load', function() {
 });
 
 document.getElementById("zoom-button").addEventListener('click', function(){
-    map.flyTo({
-        center: [lng,lat],
-    })
+    map.zoomTo(10);
 })

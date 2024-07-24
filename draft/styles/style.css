@@ -67,6 +67,7 @@ a{
 
 #form {
     grid-area: form;
+    padding: 10px;
     flex: 1;
 }
 
@@ -108,7 +109,11 @@ button{
     color: white;
     border-width: 0;
     padding: 10px;
-    box-shadow: 4px 4px rgb(236, 41, 57, 0.2);
+    box-shadow: 4px 4px rgb(236, 41, 57, 0.1);
     background-color: #ec2939;
     border-radius: 2px;
+}
+
+#zoom-button{
+    background-color: blue;
 }
