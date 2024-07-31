@@ -67,7 +67,7 @@ a{
 
 #form {
     grid-area: form;
-    padding: 10px;
+    padding-top: 10px;
     flex: 1;
 }
 
@@ -82,6 +82,11 @@ ul, ol{
 
 .message{
     font-weight: normal;
+}
+
+#intro{
+    font-weight: normal;
+    margin-right: 15px;
 }
 
 #map { 
