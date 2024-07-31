@@ -14,7 +14,7 @@ function addMarker(feature, index){
     let longitude = feature.lng;
     let latitude = feature.lat;
 
-    let title = feature['What is your home zip code?'];
+    let title = feature['city'];
     let message = feature['Finally, how do you perceive your culture as a Southeast Asian American to affect your experience as an LGBTQ+ person at UCLA, if at all?'];
 
     let popup_message = `
