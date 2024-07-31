@@ -60,11 +60,6 @@ a{
     max-width: 60%;
 }
 
-.description{
-    max-width: 60%;
-    padding: 1rem;
-}
-
 #content {
     grid-area: content;
     padding-top: 10px;
@@ -89,6 +84,13 @@ ul, ol{
     margin-right: 20px;
 }
 
+.marker-icon{
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    border-radius: 50px;
+}
+
 #experience-container{
     background-color: rgb(247, 247, 247);
     margin-right: 15px;
@@ -98,6 +100,7 @@ ul, ol{
 #intro{
     font-weight: normal;
     margin-right: 15px;
+    font-size: 2vh;
 }
 
 #map { 
