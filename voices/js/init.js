@@ -24,18 +24,14 @@ function addMarker(feature, index){
     <br/>
     <h3>${message}</h3>
     `;
-
-    /*
-    FIX: cant figure out marker icons
     // create a DOM element for the marker
     const markerContainer = document.createElement('div');
     markerContainer.className = 'markerContainer';
     markerContainer.style.backgroundImage =
         `url(assets/prideflag.png)`;
     markerContainer.classList.add('marker-icon');
-    */
 
-    let marker = new maplibregl.Marker(/*{element: markerContainer}*/)
+    let marker = new maplibregl.Marker({element: markerContainer})
         .setLngLat([longitude, latitude])
         .setPopup(new maplibregl.Popup()
             .setHTML(popup_message))
