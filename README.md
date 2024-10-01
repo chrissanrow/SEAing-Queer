@@ -12,7 +12,7 @@ SEAing Queer is a mapping project which aims to share the unique experiences of 
 
 ## Objectives
 
-With this project we hope to map out the different backgrounds of UCLA Southeast Asian American students including where they are from,. With knowledge of their cultural identity we will also collect data on how they feel being at UCLA both as Southeast Asian Americans and part of the LGBTQ+ community. The data will be used to create a website that maps out the data of groups of individuals that are a part of both communities, and share their voices.
+With this project we hope to map out the different backgrounds of UCLA Southeast Asian American students including where they are from. With knowledge of their cultural identity we will also collect data on how they feel being at UCLA both as Southeast Asian Americans and part of the LGBTQ+ community. The data will be used to create a website that maps out the data of groups of individuals that are a part of both communities, and share their voices.
 
 ## Who is being empowered
 
